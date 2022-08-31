@@ -1,6 +1,6 @@
-# Otilia Stretcu's personal webpage
+# Amin Fadaeinejad's personal webpage
 
-This is the personal website of Otilia Stretcu, which can be visualized at [https://otiliastr.github.io/](https://otiliastr.github.io/).
+This is the personal website of Amin Fadaeinejad, which can be visualized at [https://aminfadaei116.github.io/](https://aminfadaei116.github.io/).
 
 ## How to use this template for your website
 
