@@ -157,9 +157,49 @@ when actually it is positive (False Negative).
 <td><img src="/assets/img/True Positive.ppm" alt="iqubes" width="400px" height="200px" /></td>
 
 
+<h2 id="overview"> Dataset</h2>
+
+<p>For our project, we used the MVTec data-set that belonged
+to <a href="https://www.semanticscholar.org/paper/The-MVTec-Anomaly-Detection-Dataset%3A-A-Real-World-Bergmann-Batzner/48f9a48aa5b1230b05a443d2d531e6441a541686">Paul Bergmann, January
+2021</a>, this data set contained
+several different groups of images such as Bottles, Cables, Capsule, Carpet, Grid, Hazelnut, Leather, Metal Nut,
+Pill, Screw, Tile, Toothbrush, Transistor, Wood and Zipper.
+Which for our project due to the limitation we were able to
+only train one of the data sets. We used the Hazelnut dataset which contained 390 defect-free images. Deep neural
+networks are known for their impressive accuracy when they
+are trained with a very large data set, therefore we used data
+augmentation to increase the number of data samples that
+we have. We used methods suck as rotation, flipping and
+adding noise to increase the number of data samples. In the
+end, we had approximately 2000 images. There are 70 test
+images which different types such as crack, cut, hole and
+print. The data-set also includes ground Truth to calculate
+the accuracy of the testing.</p>
 
 
 
+
+
+<h2 id="more-information"> Discussions</h2>
+
+<h3 id="more-information">  Effect of Threshold</h3>
+
+
+<p>In the last part we are going to compare our result with other
+methods and approaches that are out there.
+</p>
+
+<h3 id="more-information"> Effect of Latent Space size</h3>
+
+
+<p>In the last part we are going to compare our result with other
+methods and approaches that are out there.
+</p>
+
+
+
+
+<h3 id="more-information">  Effect of Threshold</h3>
 
 
 <h2 id="more-information"> Conclusions</h2>
@@ -241,7 +281,6 @@ SSIM loss function was able to reach 100 % for precision,
 however, they were not able to have a good performance of
 the Recall, therefor according to our F1 metric, our approach
 outperforms the AE(SSIM) approach.
-
 </p>
 
 <h2 id="overview">Project Video</h2>
