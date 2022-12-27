@@ -154,7 +154,7 @@ when actually it is positive (False Negative).
 
 <h2 id="overview">1. Background</h2>
 
-<td><img src="/assets/img/True Positive.ppm" alt="iqubes" class="center" width="400px" height="200px" /></td>
+<td><img src="/assets/img/True Positive.ppm" alt="iqubes" width="400px" height="200px" /></td>
 
 
 
@@ -163,6 +163,11 @@ when actually it is positive (False Negative).
 
 
 <h2 id="more-information"> Conclusions</h2>
+
+
+<p>In the last part we are going to compare our result with other
+methods and approaches that are out there.
+</p>
 
 <table style="width:100%">
   <tr>
@@ -222,6 +227,22 @@ when actually it is positive (False Negative).
   
 </table>
 
+
+<p>We compared our approach with some of the models that
+are already used and it seems <a href="https://www.semanticscholar.org/paper/The-MVTec-Anomaly-Detection-Dataset%3A-A-Real-World-Bergmann-Batzner/48f9a48aa5b1230b05a443d2d531e6441a541686">Paul Bergmann, January
+2021</a> has the best performance when they train their model
+on a L2 loss function. But it seems that our approach is
+good since we outperform other methods such as AnoGANs,
+Auto Encoders using SSIM and CNN feature Dictionary.
+However, our approach has a lower accuracy in all 3 metrics
+(Recall, Precision and F1) compared to the state-of-the-art
+method. In one special case, the AE approach with the
+SSIM loss function was able to reach 100 % for precision,
+however, they were not able to have a good performance of
+the Recall, therefor according to our F1 metric, our approach
+outperforms the AE(SSIM) approach.
+
+</p>
 
 <h2 id="overview">Project Video</h2>
 
