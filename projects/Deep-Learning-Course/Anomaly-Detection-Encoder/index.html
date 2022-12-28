@@ -355,6 +355,150 @@ This part is for the decoder
 <h3 id="overview">2.1  Decoder Architect</h3>
 <h4 id="overview">2.1  Decoder Architect</h4>
 
+<table style="width:100%">
+  <caption style="caption-side:bottom">My savings</caption>
+  <tr>
+    <td>LAYER TYPE</td>
+    <td>IN</td>
+    <td>OUT</td>
+    <td>KERNEL</td>
+    <td>STRIDE</td>
+  </tr>
+  <tr>
+    <td>CONVTRANSPOSE2D</td>
+    <td>500</td>
+    <td>32</td>
+    <td>8</td>
+    <td>1</td>
+  </tr>
+  <tr>
+    <td>BATCHNORM2D, LEAKYRELU</td>
+    <td>32</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+
+<tr>
+    <td>CONVTRANSPOSE2D</td>
+    <td>32</td>
+    <td>64</td>
+    <td>3</td>
+    <td>1</td>
+  </tr>
+  <tr>
+    <td>BATCHNORM2D, LEAKYRELU</td>
+    <td>64</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+
+
+<tr>
+    <td>CONVTRANSPOSE2D</td>
+    <td>64</td>
+    <td>128</td>
+    <td>3</td>
+    <td>1</td>
+  </tr>
+  <tr>
+    <td>BATCHNORM2D, LEAKYRELU</td>
+    <td>128</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  
+<tr>
+    <td>CONVTRANSPOSE2D</td>
+    <td>128</td>
+    <td>64</td>
+    <td>4</td>
+    <td>2</td>
+  </tr>
+  <tr>
+    <td>BATCHNORM2D, LEAKYRELU</td>
+    <td>64</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+
+
+
+  <tr>
+    <td>CONVTRANSPOSE2D</td>
+    <td>64</td>
+    <td>64</td>
+    <td>3</td>
+    <td>1</td>
+  </tr>
+  <tr>
+    <td>BATCHNORM2D, LEAKYRELU</td>
+    <td>64</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+
+<tr>
+    <td>CONVTRANSPOSE2D</td>
+    <td>64</td>
+    <td>32</td>
+    <td>4</td>
+    <td>2</td>
+  </tr>
+  <tr>
+    <td>BATCHNORM2D, LEAKYRELU</td>
+    <td>32</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+
+<tr>
+    <td>CONVTRANSPOSE2D</td>
+    <td>32</td>
+    <td>32</td>
+    <td>3</td>
+    <td>1</td>
+  </tr>
+  <tr>
+    <td>BATCHNORM2D, LEAKYRELU</td>
+    <td>32</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+ 
+
+<tr>
+    <td>CONVTRANSPOSE2D</td>
+    <td>32</td>
+    <td>3</td>
+    <td>4</td>
+    <td>2</td>
+  </tr>
+  <tr>
+    <td>BATCHNORM2D, LEAKYRELU</td>
+    <td>64</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+
+
+  <tr>
+    <td>CONVTRANSPOSE2D</td>
+    <td>3</td>
+    <td>3</td>
+    <td>4</td>
+    <td>2</td>
+  </tr>
+
+</table>
+
 
 
 <h2 id="more-information"> Discussions</h2>
