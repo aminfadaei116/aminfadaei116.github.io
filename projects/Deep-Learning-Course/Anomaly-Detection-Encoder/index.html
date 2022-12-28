@@ -166,6 +166,73 @@ Our model had two main parts the Encoder and the Decoder. Each one had several c
 . For the activation function, we used the LeakyReLU with negative slope 0.01.
 
 
+<!--
+This part is for the encoder
+  -->
+
+<table style="width:100%">
+  <tr>
+    <td>LAYER TYPE</td>
+    <td>IN</td>
+    <td>OUT</td>
+    <td>KERNEL</td>
+  </tr>
+  <tr>
+    <td>OUR METHOD (PRINT)</td>
+    <td>0.22</td>
+    <td>0.82</td>
+    <td>0.35</td>
+  </tr>
+  <tr>
+    <td>OUR METHOD (CRACK)</td>
+    <td>0.26</td>
+    <td>0.57</td>
+    <td>0.36</td>
+  </tr>
+  <tr>
+    <td>OUR METHOD (CUT)</td>
+    <td>0.69</td>
+    <td>0.8</td>
+    <td>0.57</td>
+  </tr>
+  <tr>
+    <td>OUR METHOD (HOLE)</td>
+    <td>0.55</td>
+    <td>0.61</td>
+    <td>0.75</td>
+  </tr>
+  <tr>
+    <td>AE(SSIM)</td>
+    <td>0.08</td>
+    <td><strong>1</strong></td>
+    <td>0.15</td>
+  </tr>
+  <tr>
+    <td><strong>AE(L2)</strong></td>
+    <td>0.84</td>
+    <td>0.93</td>
+    <td><strong>0.88</strong></td>
+  </tr>
+  <tr>
+    <td>ANOGAN</td>
+    <td>0.16</td>
+    <td>0.83</td>
+    <td>0.27</td>
+  </tr>
+  <tr>
+    <td>CNN FEATURE DICTIONARY</td>
+    <td>0.07</td>
+    <td>0.9</td>
+    <td>0.13</td>
+  </tr>
+  
+</table>
+
+
+  <!--
+This part is for the decoder
+-->
+
 
 
 
