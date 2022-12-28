@@ -149,27 +149,23 @@ and Decoder. </p>
 
 <h2 id="overview">2.  Dataset</h2>
 
-<p>For our project, we used the MVTec data-set that belonged
+<p>For our project, we used the MVTec dataset  that belonged
 to <a href="https://www.semanticscholar.org/paper/The-MVTec-Anomaly-Detection-Dataset%3A-A-Real-World-Bergmann-Batzner/48f9a48aa5b1230b05a443d2d531e6441a541686">Paul Bergmann, January
-2021</a>, this data set contained
+2021</a>,this data set contained
 several different groups of images such as Bottles, Cables, Capsule, Carpet, Grid, Hazelnut, Leather, Metal Nut,
 Pill, Screw, Tile, Toothbrush, Transistor, Wood and Zipper.
-Which for our project due to the limitation we were able to
-only train one of the data sets. We used the Hazelnut dataset which contained 390 defect-free images. Deep neural
-networks are known for their impressive accuracy when they
-are trained with a very large data set, therefore we used data
-augmentation to increase the number of data samples that
-we have. We used methods suck as rotation, flipping and
-adding noise to increase the number of data samples. In the
+Due to the limitation, we were able only to train one of the data sets for our project. We used the Hazelnut dataset, which contained 390 defect-free images. Deep neural networks are known for their impressive accuracy when trained with a large dataset. Therefore we used data augmentation to increase the number of data samples 
+we have. We used rotation, flipping and
+adding noise to increase the data samples. In the
 end, we had approximately 2000 images. There are 70 test
-images which different types such as crack, cut, hole and
-print. The data-set also includes ground Truth to calculate
+images which different types, such as crack, cut, hole and
+print. The dataset also includes ground Truth to calculate
 the accuracy of the testing.</p>
 
 <h2 id="overview">2.  Network Architect</h2>
 
-Our model had two main parts the Encoder and the Decorder. Each one had several convolutional layers followed by Batch-Normalization with 0.1 momentum and ϵ = 10−6
-. For the activation function we used the LeakyReLU with negative slop 0.01.
+Our model had two main parts the Encoder and the Decoder. Each one had several convolutional layers followed by Batch-Normalization with 0.1 momentum and ϵ = 10−6
+. For the activation function, we used the LeakyReLU with negative slope 0.01.
 
 
 
@@ -180,14 +176,14 @@ Our model had two main parts the Encoder and the Decorder. Each one had several 
 <h3 id="more-information">  Effect of Threshold</h3>
 
 
-<p>In the last part we are going to compare our result with other
+<p>In the last part, we are going to compare our results with other
 methods and approaches that are out there.
 </p>
 
 <h3 id="more-information"> Effect of Latent Space size</h3>
 
 
-<p>In the last part we are going to compare our result with other
+<p>In the last part, we are going to compare our results with other
 methods and approaches that are out there.
 </p>
 
@@ -200,7 +196,7 @@ methods and approaches that are out there.
 <h2 id="more-information"> Conclusions</h2>
 
 
-<p>In the last part we are going to compare our result with other
+<p>In the last part, we are going to compare our results with other
 methods and approaches that are out there.
 </p>
 
@@ -265,8 +261,8 @@ methods and approaches that are out there.
 
 <p>We compared our approach with some of the models that
 are already used and it seems <a href="https://www.semanticscholar.org/paper/The-MVTec-Anomaly-Detection-Dataset%3A-A-Real-World-Bergmann-Batzner/48f9a48aa5b1230b05a443d2d531e6441a541686">Paul Bergmann, January
-2021</a> has the best performance when they train their model
-on a L2 loss function. But it seems that our approach is
+2021</a>  has the best performance when they train their model
+on an L2 loss function. But it seems that our approach is
 good since we outperform other methods such as AnoGANs,
 Auto Encoders using SSIM and CNN feature Dictionary.
 However, our approach has a lower accuracy in all 3 metrics
