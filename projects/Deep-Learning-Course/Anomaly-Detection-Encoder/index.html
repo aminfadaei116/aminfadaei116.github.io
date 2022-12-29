@@ -541,6 +541,9 @@ methods and approaches that are out there.
 
 <h4 id="more-information">4.2 Effect of Latent Space size</h4>
 
+In our model and result, the dimension of the latent space was 500. However, this is a hyper-parameter that we could change. Changing this parameter will cause effects on the output. As we mentioned, Decoder's objective is to reconstruct the input data from the output of the Encoder (aks the latent vector). If the latent size space is too small, the model will face difficulties learning small details since it has less power to learn the latent space distribution. Therefore in some cases, it is likely that some pixels have defected while they are entirely defect-free. If the latent space is too large, the model will start to memorize the input image instead of learning the image features. The model is likely to construct an image that has the same defective parts. This might lead to a situation that the model is not able to detect the faulty pixels in an image. 
+
+
 
 <p>In the last part, we are going to compare our results with other
 methods and approaches that are out there.
