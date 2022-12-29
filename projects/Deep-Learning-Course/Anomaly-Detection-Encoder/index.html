@@ -528,6 +528,13 @@ The model has been trained over the mentioned dataset for 1000 epochs. We used t
 
 <h4 id="more-information">4.2  Methodology</h4>
 
+We are going to train our network to reconstruct the input image from the latent space. We do that by feeding many normal images to the network so the network will learn the distribution of standard and defect-free images. Since the latent space is smaller than the size of the image, the network learns the essential components of the image. After that, since it has learned the critical part, whenever it sees a new image, it will try to use the things it learned to construct the image. Since a defective image has regions that deviate from its distribution, it will have a high constructed error (difference between the input and output), and by that, we find the defective pixels.
+
+<ul>
+  <li>Training: Input normal data to learn latent representation (Encoder). Use the latent representation to reconstruct the first image (Decoder).</li>
+  <li>Testing: An image with a defect will have a different output compared to the expected input. Hence errors will be high. Apply a threshold for the reconstruction error to detect the error. </li>
+</ul>
+
 
 <h4 id="more-information">4.3  Outputs</h4>
 
