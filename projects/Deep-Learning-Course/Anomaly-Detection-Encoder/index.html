@@ -520,16 +520,15 @@ True Positive, True Negative, False Positive and False Negative. Based on that, 
 which are:
 <center>
   <div class="cmath"> Precision` = (TP)/(TP+FP)` Recall` = (TP)/(TP+FN)`</div>
-
-<div class="cmath"> Accuracy` = (TP + TN)/(TP + FP + FN + TN)`          `x in RR,\ x !=-1/2`</div>
-
+  <div class="cmath"> Accuracy` = (TP + TN)/(TP + FP + FN + TN)`</div>
 </center>
 
 But because Precision and Recall usually play against each other, we may rely on their harmonic mean, which is the F1-score. 
 
 
-
+<center>
 <div class="cmath"> `F_1 = (2)/(Recall^(-1) + Precision^(-1)) = (2 * Recall *Precision)/(Recall + Precision)`</div>
+</center>
 
 Figure <a href="#figure7">7</a> shows the F1 score during training over the Hole and Print validation set.
 
