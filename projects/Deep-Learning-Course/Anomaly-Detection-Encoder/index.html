@@ -520,11 +520,15 @@ True Positive, True Negative, False Positive and False Negative. Based on that, 
 which are:
 
 <math>
-  H(s) = ∫<sub>0</sub><sup>∞</sup> e<sup>-st</sup> h(t) dt
+  C <box>dV<sub>out</sub><over>dt</box> = I<sub>b</sub>
+  &tanh;(<box>κ(V<sub>in</sub>-V<sub>out</sub>)<over>2</box>)
 </math>
 
 But because Precision and Recall usually play against each other, we may rely on their harmonic mean, which is the F1-score. 
 
+<math>
+  H(s) = ∫<sub>0</sub><sup>∞</sup> e<sup>-st</sup> h(t) dt
+</math>
 
 <div style="align: left; text-align:center;">
     <img src="/assets/img/2_1-F1.JPG" id="figure6" width= "100%"  height="auto" />
