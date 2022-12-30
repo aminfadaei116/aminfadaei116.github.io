@@ -579,9 +579,9 @@ We used the algorithm to detect the defect in the testing images, and for every 
 
 
 
-<h2 id="more-information">4. Discussions</h2>
+<h2 id="more-information">5. Discussions</h2>
 
-<h4 id="more-information">4.1  Effect of Threshold</h4>
+<h4 id="more-information">5.1  Effect of Threshold</h4>
 
 The output depends on the parameter &#964. In figures <a href="#figure13">13</a> and <a href="#figure14">14</a>, the effect of the threshold can be seen. If the threshold value is too high (for example, &#964 = 0.7 in figure <a href="#figure14">14</a>), the system will miss some defective pixels. Therefore the F1 accuracy will decrease. If the threshold value is too low (for example, &#964 = 0.1 in figure <a href="#figure14">14</a>), the system will assume that the defect-free pixels are also defective. In this case, the F1 will also decrease since many pixels do not contain faulty pixels, but the system will predict it anyway.
 
@@ -597,7 +597,7 @@ The output depends on the parameter &#964. In figures <a href="#figure13">13</a>
 </div>
 
 
-<h4 id="more-information">4.2 Effect of Latent Space size</h4>
+<h4 id="more-information">5.2 Effect of Latent Space size</h4>
 
 In our model and result, the dimension of the latent space was 500. However, this is a hyper-parameter that we could change. Changing this parameter will cause effects on the output. As we mentioned, Decoder's objective is to reconstruct the input data from the output of the Encoder (aks the latent vector). If the latent size space is too small, the model will face difficulties learning small details since it has less power to learn the latent space distribution. Therefore in some cases, it is likely that some pixels have defected while they are entirely defect-free. If the latent space is too large, the model will start to memorize the input image instead of learning the image features. The model is likely to construct an image that has the same defective parts. This might lead to a situation that the model is not able to detect the faulty pixels in an image. 
 
@@ -609,7 +609,7 @@ methods and approaches that are out there.
 
 
 
-<h2 id="more-information"> Conclusions</h2>
+<h2 id="more-information">6. Conclusions</h2>
 
 
 <p>In the last part, we are going to compare our results with other
