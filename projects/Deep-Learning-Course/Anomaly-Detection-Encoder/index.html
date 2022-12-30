@@ -582,10 +582,17 @@ We used the algorithm to detect the defect in the testing images, and for every 
 
 <h4 id="more-information">4.1  Effect of Threshold</h4>
 
+<div style="align: left; text-align:center;">
+    <img src="/assets/img/Tau1.JPG" id="figure13" width= "100%"  height="auto" />
+    <div class="caption">Figure 13 &#964 = 0.2</div>
+</div>
 
-<p>In the last part, we are going to compare our results with other
-methods and approaches that are out there.
-</p>
+<div style="align: left; text-align:center;">
+    <img src="/assets/img/Tau2.JPG" id="figure14" width= "100%"  height="auto" />
+    <div class="caption">Figure 14 &#964 = 0.2</div>
+</div>
+
+The output depends on the parameter &#964. In figures 13 and 14, the effect of the threshold can be seen. If the threshold value is too high (for example, &#964 = 0.7 in figure 14), the system will miss some defective pixels. Therefore the F1 accuracy will decrease. If the threshold value is too low (for example, &#964 = 0.1 in figure 14), the system will assume that the defect-free pixels are also defective. In this case, the F1 will also decrease since many pixels do not contain faulty pixels, but the system will predict it anyway.
 
 <h4 id="more-information">4.2 Effect of Latent Space size</h4>
 
