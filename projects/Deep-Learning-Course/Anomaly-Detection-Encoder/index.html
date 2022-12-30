@@ -556,22 +556,22 @@ We used the algorithm to detect the defect in the testing images, and for every 
   <li>Crack:</li>
   <div style="align: left; text-align:center;">
     <img src="/assets/img/Crack_res.JPG" id="figure9" width= "100%"  height="auto" />
-    <div class="caption">Figure 9 &#964 = 0.2</div>
+    <div class="caption">Figure 9, &#964 = 0.2</div>
 </div>
   <li>Cut:</li>
   <div style="align: left; text-align:center;">
     <img src="/assets/img/Cut_res.JPG" id="figure10" width= "100%"  height="auto" />
-    <div class="caption">Figure 10 &#964 = 0.2</div>
+    <div class="caption">Figure 10, &#964 = 0.2</div>
 </div>
   <li>Hole:</li>
   <div style="align: left; text-align:center;">
     <img src="/assets/img/Hole_res.JPG" id="figure11" width= "100%"  height="auto" />
-    <div class="caption">Figure 11 &#964 = 0.25</div>
+    <div class="caption">Figure 11, &#964 = 0.25</div>
 </div>
   <li>Print:</li>
   <div style="align: left; text-align:center;">
     <img src="/assets/img/Print_res.JPG" id="figure12" width= "100%"  height="auto" />
-    <div class="caption">Figure 12 &#964 = 0.2</div>
+    <div class="caption">Figure 12, &#964 = 0.2</div>
 </div>
 </ul>
 
@@ -582,17 +582,19 @@ We used the algorithm to detect the defect in the testing images, and for every 
 
 <h4 id="more-information">4.1  Effect of Threshold</h4>
 
-<div style="align: left; text-align:center;">
-    <img src="/assets/img/Tau1.JPG" id="figure13" width= "100%"  height="auto" />
-    <div class="caption">Figure 13 &#964 = 0.2</div>
-</div>
-
-<div style="align: left; text-align:center;">
-    <img src="/assets/img/Tau2.JPG" id="figure14" width= "100%"  height="auto" />
-    <div class="caption">Figure 14 &#964 = 0.2</div>
-</div>
-
 The output depends on the parameter &#964. In figures <a href="#figure13">13</a> and <a href="#figure14">14</a>, the effect of the threshold can be seen. If the threshold value is too high (for example, &#964 = 0.7 in figure <a href="#figure14">14</a>), the system will miss some defective pixels. Therefore the F1 accuracy will decrease. If the threshold value is too low (for example, &#964 = 0.1 in figure <a href="#figure14">14</a>), the system will assume that the defect-free pixels are also defective. In this case, the F1 will also decrease since many pixels do not contain faulty pixels, but the system will predict it anyway.
+
+
+<div style="align: left; text-align:center;">
+    <img src="/assets/img/Tau1.JPG" id="figure13" width= "70%"  height="auto" />
+    <div class="caption">Figure 13, &#964 = 0.2</div>
+</div>
+
+<div style="align: left; text-align:center;">
+    <img src="/assets/img/Tau2.JPG" id="figure14" width= "90%"  height="auto" />
+    <div class="caption">Figure 14, &#964 = 0.2</div>
+</div>
+
 
 <h4 id="more-information">4.2 Effect of Latent Space size</h4>
 
