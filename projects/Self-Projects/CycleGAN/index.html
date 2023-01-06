@@ -163,8 +163,20 @@ Besides the two methods we just mentioned, they also used one additional loss to
 
 <h2 id="overview">4.  Training</h2>
 
+<p>
+  We trained the model using a pre-trained model(trained on a different dataset), with a learning rate of 0.0002. We divided the objective (loss) by 2 while optimizing `D`, which slows down the rate at which `D` learns
+relative to the rate of `G`. They kept the same learning rate
+for the first 100 epochs and linearly decayed the rate to zero
+over the following 100 epochs. Weights are initialized from a
+Gaussian distribution `N(0, 0.02)`.
 
-<h4>2.1 Train Images</h4>
+</p>
+
+<h4>2.1 Discriminator loss</h4>
+
+<h4>2.2 Cycle C loss</h4>
+
+<h4>2.1 Discriminator loss</h4>
 
 For training, we have 390 fine images of hazelnuts. look at figure <a href="#figure3">3</a>.
 
