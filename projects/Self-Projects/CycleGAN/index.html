@@ -172,61 +172,34 @@ Gaussian distribution `N(0, 0.02)`.
 
 </p>
 
-<h4>2.1 Discriminator loss</h4>
+<h4>4.1 Discriminator loss</h4>
 
 <div style="align: left; text-align:center;">
-    <img src="/assets/img/DiscLoss.PNG" width="65%" height="auto"  id="figure4" />
+    <img src="/assets/img/DiscLoss.PNG" width="80%" height="auto"  id="figure4" />
     <div class="caption" >Figure 4</div>
 </div>
 
-<h4>2.2 Cycle Consistency loss</h4>
+<h4>4.2 Cycle Consistency loss</h4>
 
 <div style="align: left; text-align:center;">
-    <img src="/assets/img/CycleLoss.PNG" width="65%" height="auto"  id="figure5" />
+    <img src="/assets/img/CycleLoss.PNG" width="80%" height="auto"  id="figure5" />
     <div class="caption" >Figure 5</div>
 </div>
 
-<h4>2.3 Generator loss</h4>
+<h4>4.3 Generator loss</h4>
 
 <div style="align: left; text-align:center;">
-    <img src="/assets/img/GenLoss.PNG" width="65%" height="auto"  id="figure6" />
+    <img src="/assets/img/GenLoss.PNG" width="80%" height="auto"  id="figure6" />
     <div class="caption" >Figure 6</div>
 </div>
 
-For training, we have 390 fine images of hazelnuts. look at figure <a href="#figure3">3</a>.
-
-
-<div style="align: left; text-align:center;">
-    <img src="/assets/img/Good_Data.JPG" width="80%" height="auto" id="figure3"/>
-    <div class="caption">Figure 3</div>
-</div>
-
-
-<!-- <p style="text-align:center;"><img src="/assets/img/Good_Data.JPG" alt="Train Images" width="400px" height="200px" id="good_image" /></p> -->
-
-<h4>2.1 Test Images</h4>
-
-There are 4 different testing sets, including crack, cut, hole, and print. Figure <a href="#figure4">4</a> shows some samples of these test images.
-
-<div style="align: left; text-align:center;">
-    <img src="/assets/img/Def_Data.JPG" width="80%" height="auto" id="figure4" />
-    <div class="caption">Figure 4</div>
-</div>
-
-Additional to the defective images, we have the segmentation of the defective region of the images.
-
-<h2 id="overview">3.  Network Architect</h2>
-
-Our model had two main parts the Encoder and the Decoder. Each one had several convolutional layers followed by Batch-Normalization with 0.1 momentum and ϵ = 10−6
-. For the activation function, we used the LeakyReLU with negative slope 0.01.
 
 
 
-<h2 id="more-information">4. Experiments</h2>
 
-<h4 id="more-information">4.1  Training</h4>
+<h2 id="more-information">5. Result</h2>
 
-The model has been trained over the mentioned dataset for 1000 epochs. We used the ``L2`` loss for training our network using the ADAM optimizer. Figure <a href="figure5">5</a> shows the loss for each step (each epoch has approximately 63 steps).
+<h2 id="more-information">6. Conclusion</h2>
 
 
 <h2 id="more-information">More infomation</h2>
