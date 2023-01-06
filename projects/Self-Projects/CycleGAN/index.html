@@ -108,7 +108,7 @@ Image-to-image translation is one of the tasks in deep learning that has gotten 
 
 <h4 id="overview">1.1  Paired Data</h4>
 
-<p>Anomaly detection, also known as out-layer analysis, is a step-in data mining that identifies data points, events, and observations that deviate from a data set’s normal behaviour. It is the process of finding patterns in data that do not conform to prior expected behaviour. Anomaly detection is being employed increasingly in the presence of big data that is captured by sensors, social media platforms, huge networks, etc. They also have many applications, including energy systems, medical devices, banking network intrusion detection, etc. Machine learning is progressively being used to automate anomaly detection.</p>
+<p>In image-to-image translation tasks, one important thing is the need for paired data. <a href="#figure1">Figure 1</a> shows an example of paired data. However, there are limited datasets that have paired data. But CycleGAN introduces a new method to the image-to-image translation task without paired data. This is a significant boost in the field of image-to-image translation.</p>
 
 
 <div style="align: left; text-align:center;">
@@ -118,37 +118,14 @@ Image-to-image translation is one of the tasks in deep learning that has gotten 
 
 
 
-<h4 id="overview"> 1.2. Auto-Encoders</h4>
-
-<p>Auto Encoder is a generative unsupervised deep learning
-the algorithm used for reconstructing high-dimensional input
-data using a neural network with a narrow bottleneck layer in
-the middle that contains the latent representation of the input
-data. Auto-Encoders have two main parts called, Encoder
-and Decoder. </p>
+<h4 id="overview">1.3 Cycle Consistency</h4>
 
 
-<div style="align: left; text-align:center;">
-    <img src="/assets/img/Auto-Encoder.png" width="80%" height="auto" />
-    <div class="caption" id="figure1" >Figure 1</div>
-</div>
 
+<h4 id="overview">1.4 Identity loss</h4>
 
-<ul>
-  <li>Encoder: Accepts high-dimensional input data and translates it to latent low-dimensional data. The input size of an Encoder network is larger than its output size.</li>
-  <li>Decoder: The Decoder network receives the input from the Encoder coder’s output. The Decoder’s objective is to reconstruct the input data. The output size of a Decoder network is larger than its input size.</li>
-</ul>
+<h4 id="overview">1.5 Total Objective</h4>
 
-<h4 id="overview">1.3 Accuracy methods </h4>
-
-<p>In order to be able to compare our results with those already published, we need to have a standard accuracy method. First off, we need to know the concept of True and Predicted conditions. Two types of correct predictions (True Positives and True Negatives), and there are two types of errors. Error Type I for any observation predicted positive when it is negative (False Positive, also called False Alert). Error Type II for any observation predicted negative when it is positive (False Negative).
- </p>
-
-
-<div style="align: left; text-align:center;">
-    <img src="/assets/img/True Positive.ppm" width="65%" height="auto"  id="figure2" />
-    <div class="caption" >Figure 2</div>
-</div>
 
 
 <h2 id="overview">2.  Dataset</h2>
