@@ -147,18 +147,7 @@ Besides the two methods we just mentioned, they also used one additional loss to
 
 <h2 id="overview">2.  Dataset</h2>
 
-<p>For our project, we used the MVTec dataset  that belonged
-to <a href="https://www.semanticscholar.org/paper/The-MVTec-Anomaly-Detection-Dataset%3A-A-Real-World-Bergmann-Batzner/48f9a48aa5b1230b05a443d2d531e6441a541686">Paul Bergmann, January
-2021</a>,this data set contained
-several different groups of images such as Bottles, Cables, Capsule, Carpet, Grid, Hazelnut, Leather, Metal Nut,
-Pill, Screw, Tile, Toothbrush, Transistor, Wood and Zipper.
-Due to the limitation, we were able only to train one of the data sets for our project. We used the Hazelnut dataset, which contained 390 defect-free images. Deep neural networks are known for their impressive accuracy when trained with a large dataset. Therefore we used <strong>data augmentation</strong> to increase the number of data samples 
-we have. We used rotation, flipping and
-adding noise to increase the data samples. In the
-end, we had approximately 2000 images. There are 70 test
-images which different types, such as crack, cut, hole and
-print. The dataset also includes ground Truth to calculate
-the accuracy of the testing.</p>
+<p>We used the <a href="https://www.cityscapes-dataset.com/">Cityscape</a> dataset, which contains images and their corresponding segmentation. <a href="#figure1">Figure 1</a> shows a sample of these images.</p>
 
 <h4>2.1 Train Images</h4>
 
