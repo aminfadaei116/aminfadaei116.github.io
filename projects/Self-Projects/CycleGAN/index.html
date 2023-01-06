@@ -138,8 +138,14 @@ Image-to-image translation is one of the tasks in deep learning that has gotten 
 <h4 id="overview">1.4 Identity loss</h4>
 
 <p>
-Besides the two methods we just mentioned, they also used one additional loss to train their model. If we apply generator `G` to an image that is in domain `X,` we expect it to stay in the same domain, which means `G(X)=X.` The opposite should also work, which means if we apply generator `F` to an image from domain `Y,` it should remain in domain `Y.` Figure 5 shows this concept.
+Besides the two methods we just mentioned, they also used one additional loss to train their model. If we apply generator `G` to an image that is in domain `X,` we expect it to stay in the same domain, which means `G(X)=X.` The opposite should also work, which means if we apply generator `F` to an image from domain `Y,` it should remain in domain `Y.` <a href="#figure3">Figure 3</a> shows this concept.
 </p>
+
+<div style="align: left; text-align:center;">
+    <img src="/assets/img/P6.PNG" width="65%" height="auto"  id="figure3" />
+    <img src="/assets/img/P7.PNG" width="65%" height="auto"  id="figure3" />
+    <div class="caption" >Figure 3</div>
+</div>
 
 <h4 id="overview">1.5 Total Objective</h4>
 
