@@ -211,7 +211,7 @@ Gaussian distribution `N(0, 0.02)`.
 <h2 id="more-information">5. Results</h2>
 
 We conducted two different experiments 1. We only used the cycle consistency loss 2. In addition to the cycle consistency loss, we used identity loss. In the second case, we assumed that `
-\lambda_(cycle) = \lambda_{identity}`
+\lambda_{C} = \lambda_{I}`
 
 <h4>5.1 Cycle Consistency Loss Only</h4>
 
@@ -232,8 +232,8 @@ Our results and output were quite reasonable; however, we could not train the en
 <h4>5.2 Cycle Consistency Loss + Identity Loss</h4>
 
 <p>
-  Since we had limited access to Google Colab servers, we used the weights from the previous model instead of just re-training our model (the model with no Identity loss). We fine-tuned the model with the new hyper-parameters. The only difference in the two hyper-parameters is that in the case we used the identity loss, parameter `\lambda_{Identity}` was not 0 and was the same value as `\lambda_(Cycle)`. We trained our model for another 70 epochs, and figure \ref{Acc2} shows the model's accuracy during training. This accuracy indicates the number of times the model has detected if the image was real or fake. Since we were fine-tuning the model, the first 200 epochs are the same as in figure \ref{Acc}. The final result from fine-tuning the model is in figures \ref{Ground2} and \ref{Seg2}. We can see the significant improvement in the ground image result in figure \ref{Ground2}. Meanwhile, the result for the segmentation model in figure \ref{Seg2} did not show much improvement.
-  
+  Since we had limited access to Google Colab servers, we used the weights from the previous model instead of just re-training our model (the model with no Identity loss). We fine-tuned the model with the new hyper-parameters. The only difference in the two hyper-parameters is that in the case we used the identity loss, parameter `\lambda_{I}` was not 0 and was the same value as `\lambda_(C)`. We trained our model for another 70 epochs, and <a href="#figure8">figure 8</a> shows the model's accuracy during training. This accuracy indicates the number of times the model has detected if the image was real or fake. Since we were fine-tuning the model, the first 200 epochs are the same as in figure <a href="#figure7">figure 7</a>. The final result from fine-tuning the model is in figures \ref{Ground2} and \ref{Seg2}. We can see the significant improvement in the ground image result in figure \ref{Ground2}. Meanwhile, the result for the segmentation model in figure \ref{Seg2} did not show much improvement.
+
 </p>
 
 
