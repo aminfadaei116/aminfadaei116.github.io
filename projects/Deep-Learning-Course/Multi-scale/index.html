@@ -113,6 +113,12 @@ table, th, td {
 
 <h2 id="more-information">2. Architect</h2>
 
+<a href="#figure1">Figure 1</a> belonging to the original paper, shows the architect of the entire model.
+<div style="align: left; text-align:center;">
+    <img src="/assets/img/SegPaper.PNG" width="80%" height="auto" />
+    <div class="caption" id="figure1" >Figure 1: Image from original paper</div>
+</div>
+
 <h4 id="more-information">2.1 Model components</h4>
 
 <ul>
@@ -193,7 +199,23 @@ In the beginning, our ultimate goal was to build up two-stage and three-stage hi
 
 <h2 id="more-information">5. Results</h2>
 
-In the beginning, our ultimate goal was to build up two-stage and three-stage hierarchical multi-scale attention by trying both Resnet-50 and HRNet-OCD as the trunk and the DeepLab v3+ as the segmentation block. However, this was not possible due to our computational limitations (especially the small GPU memory). Inevitably, we replaced the HRNet-OCD architecture with MobileNet in our experience due to its smaller size and fewer parameters. Even after this, we were still unable to train our models end to end; instead, we relied on transfer learning methods to obtain acceptable results. Our main approach in training the hierarchical models was to train different 3 segmentation models for segmenting images with three scales (2, 1, and 0.5) and eventually use the trained trunk and segmentation blocks for the original models. We use the same architecture as the hierarchical models' initial stage for training trunks and segmentation blocks on images with various sizes.
+
+<table style="width:100%" id="table1">
+  <tr>
+    <td>Trunk</td>
+    <td>Segmentation Block</td>
+    <td>Segmentation Block</td>
+    <td>Image Scale</td>
+  </tr>
+  <tr>
+    <td>Flat</td>
+    <td>road, sidewalk,parking,rail track
+  </td>
+    
+
+
+</table>
+<center > Table 2</center>
 
 
 
