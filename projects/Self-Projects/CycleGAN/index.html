@@ -238,7 +238,7 @@ Our results and output were quite reasonable; however, we could not train the en
 <h4>5.2 Cycle Consistency Loss + Identity Loss</h4>
 
 <p>
-  Since we had limited access to Google Colab servers, we used the weights from the previous model instead of just re-training our model (the model with no Identity loss). We fine-tuned the model with the new hyper-parameters. The only difference in the two hyper-parameters is that in the case we used the identity loss, parameter `\lambda_{I}` was not 0 and was the same value as `\lambda_(C)`. We trained our model for another 70 epochs, and <a href="#figure7">figure 7</a>(right) shows the model's accuracy during training. This accuracy indicates the number of times the model has detected if the image was real or fake. Since we were fine-tuning the model, the first 200 epochs are the same as in figure <a href="#figure7">figure 7</a>(right). The final result from fine-tuning the model is in <a href="#figure10">figure 10</a> and <a href="#figure10">figure 11</a>. We can see the significant improvement in the ground image result in figure <a href="#figure9">figure 9</a>. Meanwhile, the result for the segmentation model in <a href="#figure11">figure 11</a> did not show much improvement.
+  Since we had limited access to Google Colab servers, we used the weights from the previous model instead of just re-training our model (the model with no Identity loss). We fine-tuned the model with the new hyper-parameters. The only difference in the two hyper-parameters is that in the case we used the identity loss, parameter `\lambda_{I}` was not 0 and was the same value as `\lambda_(C)`. We trained our model for another 70 epochs, and <a href="#figure7">figure 7</a>(right) shows the model's accuracy during training. This accuracy indicates the number of times the model has detected if the image was real or fake. Since we were fine-tuning the model, the first 200 epochs are the same as in figure <a href="#figure7">figure 7</a>(right). The final result from fine-tuning the model is in <a href="#figure10">figure 10</a> and <a href="#figure10">figure 11</a>. We can see the significant improvement in the ground image result in figure <a href="#figure10">figure 10</a>. Meanwhile, the result for the segmentation model in <a href="#figure11">figure 11</a> did not show much improvement.
 
 </p>
 
@@ -256,7 +256,7 @@ Our results and output were quite reasonable; however, we could not train the en
 <h2 id="more-information">6. Conclusion</h2>
 
 <p>
-  To sum up, the result we got from this project was not the exact same as the main paper itself. However, the results were quite acceptable. By looking at the generated images, we could see that the model's performance over generated ground images is quite well, but of course not as good as the main images. The results of the generated segmentation images were not as good as the ground images. One thing that we need to consider is that every colour in the segmentation image is going to represent a particular class. However, what the CycleGAN model sees is a normal image, and it will treat the image the same way, which is why the segmentation results are not categorized. Since the segmentation output is not categorized(the output was just an RGB image), we could not fully reconstruct that part. It is also interesting since in the paper in (look at figure <a href="#figure10">figure 10</a>) they showed the result they had when they used Cycle Alone is quite similar to the result that we have gotten in our implementation. However, their final result is better than ours.
+  To sum up, the result we got from this project was not the exact same as the main paper itself. However, the results were quite acceptable. By looking at the generated images, we could see that the model's performance over generated ground images is quite well, but of course not as good as the main images. The results of the generated segmentation images were not as good as the ground images. One thing that we need to consider is that every colour in the segmentation image is going to represent a particular class. However, what the CycleGAN model sees is a normal image, and it will treat the image the same way, which is why the segmentation results are not categorized. Since the segmentation output is not categorized(the output was just an RGB image), we could not fully reconstruct that part. It is also interesting since in the paper in (look at figure <a href="#figure12">figure 12</a>) they showed the result they had when they used Cycle Alone is quite similar to the result that we have gotten in our implementation. However, their final result is better than ours.
 </p>
 
 <div style="align: left; text-align:center;">
@@ -265,6 +265,8 @@ Our results and output were quite reasonable; however, we could not train the en
 </div>
 
 
+
+<a href="figure13">Figure 13</a> shows a sample result of the generated images for both real and segmentation images.
 <div style="align: left; text-align:center;">
     <img src="/assets/img/Final.PNG" width="80%" height="auto"  id="figure13" />
     <div class="caption" >Figure 13</div>
