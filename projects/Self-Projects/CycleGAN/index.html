@@ -236,13 +236,13 @@ Our results and output were quite reasonable; however, we could not train the en
 <h4>5.2 Cycle Consistency Loss + Identity Loss</h4>
 
 <p>
-  Since we had limited access to Google Colab servers, we used the weights from the previous model instead of just re-training our model (the model with no Identity loss). We fine-tuned the model with the new hyper-parameters. The only difference in the two hyper-parameters is that in the case we used the identity loss, parameter `\lambda_{I}` was not 0 and was the same value as `\lambda_(C)`. We trained our model for another 70 epochs, and <a href="#figure7">figure 7</a>(left) shows the model's accuracy during training. This accuracy indicates the number of times the model has detected if the image was real or fake. Since we were fine-tuning the model, the first 200 epochs are the same as in figure <a href="#figure7">figure 7</a>(right). The final result from fine-tuning the model is in <a href="#figure9">figure 9</a> and \ref{Seg2}. We can see the significant improvement in the ground image result in figure <a href="#figure9">figure 9</a>. Meanwhile, the result for the segmentation model in figure \ref{Seg2} did not show much improvement.
+  Since we had limited access to Google Colab servers, we used the weights from the previous model instead of just re-training our model (the model with no Identity loss). We fine-tuned the model with the new hyper-parameters. The only difference in the two hyper-parameters is that in the case we used the identity loss, parameter `\lambda_{I}` was not 0 and was the same value as `\lambda_(C)`. We trained our model for another 70 epochs, and <a href="#figure7">figure 7</a>(left) shows the model's accuracy during training. This accuracy indicates the number of times the model has detected if the image was real or fake. Since we were fine-tuning the model, the first 200 epochs are the same as in figure <a href="#figure7">figure 7</a>(right). The final result from fine-tuning the model is in <a href="#figure10">figure 10</a> and <a href="#figure9">figure 9</a>. We can see the significant improvement in the ground image result in figure <a href="#figure9">figure 9</a>. Meanwhile, the result for the segmentation model in <a href="#figure8">figure 8</a> did not show much improvement.
 
 </p>
 
 
 <div style="align: left; text-align:center;">
-    <img src="/assets/img/GroundGood.PNG" width="75%" height="auto"  id="figure1" />
+    <img src="/assets/img/GroundGood.PNG" width="75%" height="auto"  id="figure10" />
     <div class="caption" >Figure 9</div>
 </div>
 
