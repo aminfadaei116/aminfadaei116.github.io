@@ -111,7 +111,18 @@ table, th, td {
 
 
 
-<h2 id="more-information">2. Training</h2>
+<h2 id="more-information">2. Architect</h2>
+
+<h4 id="more-information">2.1 Model components</h4>
+
+<ul>
+  <li>Backbone: ResNet-50 </li>
+  <li>Semantic Head:  (3𝑥3 𝑐𝑜𝑛𝑣) → (𝐵𝑁) → (𝑅𝑒𝐿𝑈) → (3𝑥3 𝑐𝑜𝑛𝑣) → (𝐵𝑁) → (𝑅𝑒𝐿𝑈) →
+(1𝑥1𝑐𝑜𝑛𝑣) </li>
+  <li>Attention Head: </li>
+  <li>Auxiliary semantic head: (1𝑥1 𝑐𝑜𝑛𝑣) → (𝐵𝑁) → (𝑅𝑒𝐿𝑈) → (1𝑥1 𝑐𝑜𝑛𝑣)</li>
+</ul>
+
 
 <h2 id="more-information">3. Dataset</h2>
 
@@ -176,10 +187,14 @@ labeled for semantic understanding. But we did not need the entire dataset since
 
 
 
-
-<h2 id="more-information">2. Training</h2>
+<h2 id="more-information">4. Training</h2>
 
 In the beginning, our ultimate goal was to build up two-stage and three-stage hierarchical multi-scale attention by trying both Resnet-50 and HRNet-OCD as the trunk and the DeepLab v3+ as the segmentation block. However, this was not possible due to our computational limitations (especially the small GPU memory). Inevitably, we replaced the HRNet-OCD architecture with MobileNet in our experience due to its smaller size and fewer parameters. Even after this, we were still unable to train our models end to end; instead, we relied on transfer learning methods to obtain acceptable results. Our main approach in training the hierarchical models was to train different 3 segmentation models for segmenting images with three scales (2, 1, and 0.5) and eventually use the trained trunk and segmentation blocks for the original models. We use the same architecture as the hierarchical models' initial stage for training trunks and segmentation blocks on images with various sizes.
+
+<h2 id="more-information">5. Results</h2>
+
+In the beginning, our ultimate goal was to build up two-stage and three-stage hierarchical multi-scale attention by trying both Resnet-50 and HRNet-OCD as the trunk and the DeepLab v3+ as the segmentation block. However, this was not possible due to our computational limitations (especially the small GPU memory). Inevitably, we replaced the HRNet-OCD architecture with MobileNet in our experience due to its smaller size and fewer parameters. Even after this, we were still unable to train our models end to end; instead, we relied on transfer learning methods to obtain acceptable results. Our main approach in training the hierarchical models was to train different 3 segmentation models for segmenting images with three scales (2, 1, and 0.5) and eventually use the trained trunk and segmentation blocks for the original models. We use the same architecture as the hierarchical models' initial stage for training trunks and segmentation blocks on images with various sizes.
+
 
 
 <h2 id="more-information">More infomation</h2>
