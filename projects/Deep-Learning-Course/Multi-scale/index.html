@@ -105,9 +105,55 @@ table, th, td {
 <p><br /></p>
 
 
-<h2 id="more-information">Introduction</h2>
+<h2 id="more-information">1. Introduction</h2>
 
-<p> Image segmentation is a method for categorizing each pixel in a frame. Object detection is one of the many applications that image segmentation has. Instead of processing the entire image, a common practice is first to use image segmentation to find an approximate of the object's region. Then, the object detector can operate on a bounding box already defined by the segmentation algorithm. This prevents the detector from processing the entire image, improving accuracy and reducing inference time.</p>
+<p> Image segmentation is a method for categorizing each pixel in a frame. Object detection is one of the many applications that image segmentation has. Instead of processing the entire image, a common practice is first to use image segmentation to find an approximate of the object's region. Then, the object detector can operate on a bounding box already defined by the segmentation algorithm. This prevents the detector from processing the entire image, improving accuracy and reducing inference time. There are many different segmentation models out there, all with unique capabilities and constraints. The <a href="https://arxiv.org/abs/2005.10821">Andrew Tao</a> paper introduced a model that uses different scales of images as input while using output information to make a more accurate segmentation mask.</p>
+
+
+
+<h2 id="more-information">2. Training</h2>
+
+<h2 id="more-information">3. Dataset</h2>
+
+The dataset that we were using in the following project was the <a href="https://www.cityscapes-dataset.com/">Cityscapes</a> dataset, which was
+labeled for semantic understanding.
+
+
+
+<table style="width:100%" id="table1">
+  <tr>
+    <td>LAYER TYPE</td>
+    <td>IN</td>
+    <td>OUT</td>
+    <td>KERNEL</td>
+    <td>STRIDE</td>
+  </tr>
+  <tr>
+    <td>CONV2D</td>
+    <td>3</td>
+    <td>3</td>
+    <td>4</td>
+    <td>2</td>
+  </tr>
+  <tr>
+    <td>BATCHNORM2D, LEAKYRELU</td>
+    <td>3</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+
+</table>
+<center > Table 1</center>
+
+
+
+
+
+
+<h2 id="more-information">2. Training</h2>
+
+In the beginning, our ultimate goal was to build up two-stage and three-stage hierarchical multi-scale attention by trying both Resnet-50 and HRNet-OCD as the trunk and the DeepLab v3+ as the segmentation block. However, this was not possible due to our computational limitations (especially the small GPU memory). Inevitably, we replaced the HRNet-OCD architecture with MobileNet in our experience due to its smaller size and fewer parameters. Even after this, we were still unable to train our models end to end; instead, we relied on transfer learning methods to obtain acceptable results. Our main approach in training the hierarchical models was to train different 3 segmentation models for segmenting images with three scales (2, 1, and 0.5) and eventually use the trained trunk and segmentation blocks for the original models. We use the same architecture as the hierarchical models' initial stage for training trunks and segmentation blocks on images with various sizes.
 
 
 <h2 id="more-information">More infomation</h2>
