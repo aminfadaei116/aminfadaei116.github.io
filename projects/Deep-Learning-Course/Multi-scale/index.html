@@ -114,7 +114,7 @@ table, th, td {
 
 One of <a href="https://arxiv.org/abs/2005.10821">Andrew Tao et. al</a> main contributions were where for each scale, a dense mash was learned, 
 and they combined the multi-scale predictions in a pixel-wise manner, followed by pixel-wise summation between different scales to get the final output. They also refer to
-Chen’s method as explicit. They used their hierarchical method to learn a relative attention mask between adjacent scales instead of learning attention masks for each fixed scale set. During training, they only trained them with the adjacent scale pair.
+Chen’s method as explicit. They used their hierarchical method to learn a relative attention mask between adjacent scales instead of learning attention masks for each fixed scale set. During training, they only trained them with the adjacent scale pair. This allows the network network learns to predict relative attention for a range of image scales
 
 
 <h2 id="more-information">2. Architect</h2>
