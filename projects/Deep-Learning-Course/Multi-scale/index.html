@@ -110,6 +110,12 @@ table, th, td {
 <p> Image segmentation is a method for categorizing each pixel in a frame. Object detection is one of the many applications that image segmentation has. Instead of processing the entire image, a common practice is first to use image segmentation to find an approximate of the object's region. Then, the object detector can operate on a bounding box already defined by the segmentation algorithm. This prevents the detector from processing the entire image, improving accuracy and reducing inference time. There are many different segmentation models out there, all with unique capabilities and constraints. The <a href="https://arxiv.org/abs/2005.10821">Andrew Tao</a> paper introduced a model that uses different scales of images as input while using output information to make a more accurate segmentation mask.</p>
 
 
+<h2 id="more-information">1.1  Hierarchical multi-scale attention</h2>
+
+One of <a href="https://arxiv.org/abs/2005.10821">Andrew Tao et. al</a> main contributions were where for each scale, a dense mash was learned, 
+and they combined the multi-scale predictions in a pixel-wise manner, followed by pixel-wise summation between different scales to get the final output. They also refer to
+Chen’s method as explicit. They used their hierarchical method to learn a relative attention mask between adjacent scales instead of learning attention masks for each fixed scale set. During training, they only trained them with the adjacent scale pair.
+
 
 <h2 id="more-information">2. Architect</h2>
 
