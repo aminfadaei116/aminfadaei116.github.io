@@ -183,7 +183,7 @@ table, th, td {
 The Percentage of Correct Parts (PCP) is a metric used to measure the detection rate of limbs. It considers a limb to be detected if the distance between the two predicted joint locations and the true limb joint locations is no more than half of the limb length. However, the PCP metric has limitations in that it penalizes shorter and more difficult to detect limbs.
 
 <div style="align: left; text-align:center;">
-    <img src="/assets/img/pose_pcp.PNG" width="65%" height="auto"  id="figure12" />
+    <img src="/assets/img/pose_pcp.PNG" width="85%" height="auto"  id="figure12" />
     <div class="caption" >Figure 3: PCP during training</div>
   </div>
 
@@ -192,7 +192,7 @@ The Percentage of Correct Parts (PCP) is a metric used to measure the detection 
 Another metric called the Percent of Detected Joints (PDJ) has been proposed to address the limitations of the PCP metric. This metric measures joint detection rates by considering a joint to be detected if the distance between the predicted and true joint locations is within a certain fraction of the torso diameter. By adjusting this fraction, detection rates can be obtained for different levels of localization precision.
 
 <div style="align: left; text-align:center;">
-    <img src="/assets/img/pose_pdj.PNG" width="65%" height="auto"  id="figure13" />
+    <img src="/assets/img/pose_pdj.PNG" width="85%" height="auto"  id="figure13" />
     <div class="caption" >Figure 4: PDJ during training</div>
   </div>
 
