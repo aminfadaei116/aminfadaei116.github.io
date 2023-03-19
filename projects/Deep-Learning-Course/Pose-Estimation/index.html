@@ -121,13 +121,28 @@ table, th, td {
   <li>The described coordinates are absolute image coordinates on the full image size, which can cause issues if the image is resized. To avoid this, the coordinates are normalized with respect to a bounding box that encloses the human body or parts of it. These bounding boxes are represented by `b = (b_c, b_h, b_w)`, where `b_c` is the center of the bounding box and `b_h` and `b_w` are the height and width of the bounding box, respectively.</li>
   <li>We normalized the location coordinates using following formula. </li>
   <div style="align: left; text-align:center;">
-    <img src="/assets/img/pose_1.PNG" width="65%" height="auto"  id="figure0" />
+    <img src="/assets/img/pose_1.PNG" width="45%" height="auto"  id="figure0" />
+  </div>
+  <li>Finally we get the normalized Pose vector coordinates.</li>
+  <div style="align: left; text-align:center;">
+    <img src="/assets/img/pose_2.PNG" width="65%" height="auto"  id="figure1" />
   </div>
 
 </ul>
 
 
 <h4 id="overview">2.2 CNN Architecture</h4>
+
+<ul>
+  <li>The authors of this paper uses AlexNet as their CNN architecture because it had shown great results on Image Localization task.</li>
+  <div style="align: left; text-align:center;">
+    <img src="/assets/img/pose_3.PNG" width="45%" height="auto"  id="figure0" />
+  </div>
+  <li>The location coordinates were normalized using the following formula, where `&theta` denotes trainable parameters (weights and biases) and `&psi` denotes the neural architecture applied to normalized pose vector `N(x)`. The predicted output `y*` can be obtained by denormalizing the output `(N-1)`.</li>
+  <li>The authors of this paper uses AlexNet as their CNN architecture because it had shown great results on Image Localization task.</li>
+
+
+</ul>
 
 <h4 id="overview">2.3 DNN regressor:</h4>
 
