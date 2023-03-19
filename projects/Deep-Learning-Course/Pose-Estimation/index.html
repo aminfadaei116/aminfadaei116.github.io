@@ -136,7 +136,7 @@ table, th, td {
 <ul>
   <li>The authors of this paper uses AlexNet as their CNN architecture because it had shown great results on Image Localization task.</li>
   <div style="align: left; text-align:center;">
-    <img src="/assets/img/pose_3.PNG" width="45%" height="auto"  id="figure0" />
+    <img src="/assets/img/pose_3.PNG" width="45%" height="auto"  id="figure2" />
   </div>
   <li>The location coordinates were normalized using the following formula, where `&theta` denotes trainable parameters (weights and biases) and `&psi` denotes the neural architecture applied to normalized pose vector `N(x)`. The predicted output `y*` can be obtained by denormalizing the output `(N-1)`.</li>
   <li>This neural network architecture takes image of size 220×220 and apply an stride of 4.</li>
@@ -145,7 +145,7 @@ table, th, td {
   <li>The last layer of architecture outputs `2k` joint coordinates.</li>
   <li>The architecture uses `L2` loss function to minimize the distance between predicted coordinates and ground truth loss function.</li>
   <div style="align: left; text-align:center;">
-    <img src="/assets/img/pose_4.PNG" width="45%" height="auto"  id="figure0" />
+    <img src="/assets/img/pose_4.PNG" width="45%" height="auto"  id="figure3" />
   </div>
 
 
@@ -154,6 +154,19 @@ table, th, td {
 </ul>
 
 <h4 id="overview">2.3 DNN regressor:</h4>
+
+<ul>
+  <li>It is not easy to increase the input size to have a finer pose estimation since this will increase the already large number of parameters. Thus, a cascade of pose regressors are proposed to refine the pose estimation.</li>
+  <li>Now, we represent the first stage with following equation </li>
+  <div style="align: left; text-align:center;">
+    <img src="/assets/img/pose_5.PNG" width="45%" height="auto"  id="figure4" />
+  </div>
+  <li>where `b^0` represents full image or bounding box obtained by a person detector.</li>
+  <div style="align: left; text-align:center;">
+    <img src="/assets/img/pose_6.PNG" width="45%" height="auto"  id="figure5" />
+  </div>
+  <li></li>
+</ul>
 
 
 <h2 id="more-information">3. Accuracy Metrics</h2>
