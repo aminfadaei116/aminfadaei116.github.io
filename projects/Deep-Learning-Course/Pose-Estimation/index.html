@@ -110,6 +110,21 @@ table, th, td {
 
 <p> The problem of human pose estimation, which involves locating human joints in images, has been extensively studied in the computer vision community. This problem is challenging due to factors such as strong articulations, occlusions, and the need to capture context. Most work in this field has focused on modeling articulations using part-based models, which have limited expressiveness and only model a small subset of interactions between body parts. Holistic methods have been proposed, but have had limited success in real-world problems. In this paper, the authors propose a novel approach to human pose estimation using deep neural networks (DNNs). They show that DNNs can effectively capture the full context of each body joint and present a simple yet powerful formulation of the problem as a joint regression task. They propose a cascade of DNN-based pose predictors to refine joint predictions and achieve state-of-the-art results on four widely used benchmarks. The approach is shown to perform well on images with strong variation in appearance and articulations, and generalizes well across datasets..</p>
 
+<h2 id="more-information">2. Architecture</h2>
+
+
+<h2 id="more-information">3. Accuracy Metrics</h2>
+
+<h4 id="overview">3.1 Percentage of Correct Parts (PCP)</h4>
+
+The Percentage of Correct Parts (PCP) is a metric used to measure the detection rate of limbs. It considers a limb to be detected if the distance between the two predicted joint locations and the true limb joint locations is no more than half of the limb length. However, the PCP metric has limitations in that it penalizes shorter and more difficult to detect limbs.
+
+<h4 id="overview">3.2 Percent of Detected Joints (PDJ)</h4>
+
+Another metric called the Percent of Detected Joints (PDJ) has been proposed to address the limitations of the PCP metric. This metric measures joint detection rates by considering a joint to be detected if the distance between the predicted and true joint locations is within a certain fraction of the torso diameter. By adjusting this fraction, detection rates can be obtained for different levels of localization precision.
+
+<h2 id="more-information">4. Results</h2>
+
 
 <h2 id="more-information">More infomation</h2>
 
