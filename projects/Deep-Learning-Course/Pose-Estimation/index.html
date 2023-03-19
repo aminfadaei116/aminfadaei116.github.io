@@ -138,10 +138,10 @@ table, th, td {
   <div style="align: left; text-align:center;">
     <img src="/assets/img/pose_3.PNG" width="35%" height="auto"  id="figure2" />
   </div>
-  <li>The location coordinates were normalized using the following formula, where `&theta` denotes trainable parameters (weights and biases) and `&psi` denotes the neural architecture applied to normalized pose vector `N(x)`. The predicted output `y*` can be obtained by denormalizing the output `(N-1)`.</li>
+  <li>The location coordinates were normalized using the following formula, where `theta` denotes trainable parameters (weights and biases) and `psi` denotes the neural architecture applied to normalized pose vector `N(x)`. The predicted output `y*` can be obtained by denormalizing the output `(N-1)`.</li>
   <li>This neural network architecture takes image of size 220×220 and apply an stride of 4.</li>
   <li>The CNN architecture contains 7 layers which can be listed as : C(55×55×96) — LRN — P — C(27×27×256) — LRN — P — C(13×13×384) — C(13×13×384) — C(13×13×256) — P — F(4096) — F(4096) </li>
-  <li>where `C` is convolution layer which uses ReLU as activation function to introduce non-linearity in the model, LRN is local response normalization, `P` is pooling layer, and `F` is fully connected layer.</li>
+  <li>Where `C` is convolution layer which uses ReLU as activation function to introduce non-linearity in the model, LRN is local response normalization, `P` is pooling layer, and `F` is fully connected layer.</li>
   <li>The last layer of architecture outputs `2k` joint coordinates.</li>
   <li>The architecture uses `L2` loss function to minimize the distance between predicted coordinates and ground truth loss function.</li>
   <div style="align: left; text-align:center;">
@@ -161,11 +161,11 @@ table, th, td {
   <div style="align: left; text-align:center;">
     <img src="/assets/img/pose_5.PNG" width="45%" height="auto"  id="figure4" />
   </div>
-  <li>where `b^0` represents full image or bounding box obtained by a person detector.</li>
+  <li>Where `b^0` represents full image or bounding box obtained by a person detector.</li>
   <div style="align: left; text-align:center;">
     <img src="/assets/img/pose_6.PNG" width="45%" height="auto"  id="figure5" />
   </div>
-  <li></li>
+  <li>where diam(y) is the distance of opposing joints, such as left shoulder and right hips, and then scaled by `Sigma` to make it  `&sigma diam(y)`.</li>
 </ul>
 
 
