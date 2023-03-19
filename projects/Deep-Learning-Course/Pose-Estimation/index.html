@@ -106,7 +106,7 @@ table, th, td {
 
 <div style="align: left; text-align:center;">
     <img src="/assets/img/pose_10_v2.PNG" width="65%" height="auto"  id="figure8" />
-    <div class="caption" >Figure 1: My result from implementing the <a href="https://arxiv.org/pdf/1312.4659.pdf">DeepPose</a></div>
+    <div class="caption" >Figure 1: My result from reproducing the <a href="https://arxiv.org/pdf/1312.4659.pdf">DeepPose</a></div>
 </div>
 
 <h2 id="more-information">1. Introduction</h2>
@@ -183,7 +183,7 @@ table, th, td {
 The Percentage of Correct Parts (PCP) is a metric used to measure the detection rate of limbs. It considers a limb to be detected if the distance between the two predicted joint locations and the true limb joint locations is no more than half of the limb length. However, the PCP metric has limitations in that it penalizes shorter and more difficult to detect limbs.
 
 <div style="align: left; text-align:center;">
-    <img src="/assets/img/pose_pcp.PNG" width="45%" height="auto"  id="figure3" />
+    <img src="/assets/img/pose_pcp.PNG" width="65%" height="auto"  id="figure3" />
     <div class="caption" >Figure 3: PCP during training</div>
   </div>
 
@@ -192,17 +192,18 @@ The Percentage of Correct Parts (PCP) is a metric used to measure the detection 
 Another metric called the Percent of Detected Joints (PDJ) has been proposed to address the limitations of the PCP metric. This metric measures joint detection rates by considering a joint to be detected if the distance between the predicted and true joint locations is within a certain fraction of the torso diameter. By adjusting this fraction, detection rates can be obtained for different levels of localization precision.
 
 <div style="align: left; text-align:center;">
-    <img src="/assets/img/pose_pdj.PNG" width="45%" height="auto"  id="figure3" />
+    <img src="/assets/img/pose_pdj.PNG" width="65%" height="auto"  id="figure12" />
     <div class="caption" >Figure 4: PDJ during training</div>
   </div>
 
 <h2 id="more-information">4. Results</h2>
 
+After we trained the model, we tested it over the training and testing dataset to see its performace.
 
 <h4 id="overview">4.1 Train images</h4>
 
 <div style="align: left; text-align:center;">
-    <img src="/assets/img/pose_7_v2.PNG" width="65%" height="auto"  id="figure8" />
+    <img src="/assets/img/pose_7_v2.PNG" width="65%" height="auto"  id="figure13" />
     <div class="caption" >Figure 5: Models output using training image</div>
 
     
@@ -214,6 +215,10 @@ Another metric called the Percent of Detected Joints (PDJ) has been proposed to 
     <img src="/assets/img/pose_9_v2.PNG" width="65%" height="auto"  id="figure8" />
     <div class="caption" >Figure 6: Models output using testing image</div>
 </div>
+
+<h2 id="more-information">5. Conclusion</h2>
+
+As you can see, the result for both training and testing images are good. However, in order to get a better preformance on the testing images (since the training images are very good) is to increase the number of data sample for training. We can also notice overfitting effect on <a href="#figure12">Figure 3</a> & <a href="#figure13">Figure 4</a>
 
 <h2 id="more-information">More infomation</h2>
 
