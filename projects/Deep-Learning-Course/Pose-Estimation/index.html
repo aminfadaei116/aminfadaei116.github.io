@@ -108,11 +108,7 @@ table, th, td {
 
 <h2 id="more-information">1. Introduction</h2>
 
-<p> Pose estimation is a computer vision task that infers the pose of a person or object in an mage or video. We can also think of pose estimation as the problem of determining the position and orientation of a camera relative to a given person or object.
-
-This is typically done by identifying, locating, and tracking a number of keypoints on a given object or person. For objects, this could be corners or other significant features. And for humans, these keypoints represent major joints like an elbow or knee.
-
-The goal of our machine learning models are to track these keypoints in images and videos..</p>
+<p> The problem of human pose estimation, which involves locating human joints in images, has been extensively studied in the computer vision community. This problem is challenging due to factors such as strong articulations, occlusions, and the need to capture context. Most work in this field has focused on modeling articulations using part-based models, which have limited expressiveness and only model a small subset of interactions between body parts. Holistic methods have been proposed, but have had limited success in real-world problems. In this paper, the authors propose a novel approach to human pose estimation using deep neural networks (DNNs). They show that DNNs can effectively capture the full context of each body joint and present a simple yet powerful formulation of the problem as a joint regression task. They propose a cascade of DNN-based pose predictors to refine joint predictions and achieve state-of-the-art results on four widely used benchmarks. The approach is shown to perform well on images with strong variation in appearance and articulations, and generalizes well across datasets..</p>
 
 
 <h2 id="more-information">More infomation</h2>
@@ -120,6 +116,7 @@ The goal of our machine learning models are to track these keypoints in images a
 <ul>
   <li>Code: <a href="https://github.com/aminfadaei116/Deep-Learning-Course/tree/master/CA2">link</a> </li>
   <li>Data: <a href="https://paperswithcode.com/dataset/lsp">link</a> </li>
+  <li>Report: <a href="/assets/pdf/Projects-Reports/Anomaly-Report.pdf">link</a> </li>
 </ul>
 
   </div>
