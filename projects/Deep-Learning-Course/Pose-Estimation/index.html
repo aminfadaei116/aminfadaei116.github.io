@@ -154,6 +154,10 @@ table, th, td {
 </ul>
 
 <h4 id="overview">2.3 DNN regressor:</h4>
+<div style="align: left; text-align:center;">
+    <img src="/assets/img/P8.PNG" width="65%" height="auto"  id="figure8" />
+    <div class="caption" >Figure 1: An overview of the model: Image from the original paper</div>
+</div>
 
 <ul>
   <li>It is not easy to increase the input size to have a finer pose estimation since this will increase the already large number of parameters. Thus, a cascade of pose regressors are proposed to refine the pose estimation.</li>
@@ -163,9 +167,9 @@ table, th, td {
   </div>
   <li>Where `b^0` represents full image or bounding box obtained by a person detector.</li>
   <div style="align: left; text-align:center;">
-    <img src="/assets/img/pose_6.PNG" width="45%" height="auto"  id="figure5" />
+    <img src="/assets/img/pose_6.PNG" width="50%" height="auto"  id="figure5" />
   </div>
-  <li>where diam(y) is the distance of opposing joints, such as left shoulder and right hips, and then scaled by `Sigma` to make it  `&sigma diam(y)`.</li>
+  <li>where diam(y) is the distance of opposing joints, such as left shoulder and right hips, and then scaled by `sigma` to make it  `sigma` `diam(y)`.</li>
 </ul>
 
 
@@ -181,6 +185,20 @@ Another metric called the Percent of Detected Joints (PDJ) has been proposed to 
 
 <h2 id="more-information">4. Results</h2>
 
+
+<h4 id="overview">4.1 Train images</h4>
+
+<div style="align: left; text-align:center;">
+    <img src="/assets/img/pose_7_v2.PNG" width="65%" height="auto"  id="figure8" />
+    <div class="caption" >Figure 1: An overview of the model: Image from the original paper</div>
+</div>
+
+<h4 id="overview">4.2 Test images</h4>
+
+<div style="align: left; text-align:center;">
+    <img src="/assets/img/pose_9_v2.PNG" width="65%" height="auto"  id="figure8" />
+    <div class="caption" >Figure 1: An overview of the model: Image from the original paper</div>
+</div>
 
 <h2 id="more-information">More infomation</h2>
 
