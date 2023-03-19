@@ -115,9 +115,10 @@ table, th, td {
 <h4 id="overview">2.1 Pose Vector</h4>
 
 <ul>
-  <li>The authors of this paper have devised a technique to depict the human body in the form of pose. This is achieved by encoding the location of all k body parts into joints which are collectively known as a pose vector. The definition of this pose vector is outlined in the paper.</li>
-  <li>In this context, the notation yi refers to the x and y coordinates representing the location of the ith body joint.</li>
-  <li>Report: <a href="/assets/pdf/Projects-Reports/Report_CA2.pdf.pdf">link</a> </li>
+  <li>The authors of this paper have devised a technique to depict the human body in the form of pose. This is achieved by encoding the location of all `k` body parts into joints which are collectively known as a pose vector. The definition of this pose vector is outlined in the paper.</li>
+  <li>In this context, the notation `y_i` refers to the `x` and `y` coordinates representing the location of the ith body joint.</li>
+  <li>The representation of the image in this paper is structured as a tuple `(x, y)`, where x is the image data and `y` represents the ground truth pose vector data.</li>
+  <li>The described coordinates are absolute image coordinates on the full image size, which can cause issues if the image is resized. To avoid this, the coordinates are normalized with respect to a bounding box that encloses the human body or parts of it. These bounding boxes are represented by `b = (b_c, b_h, b_w)`, where bc is the center of the bounding box and bh and bw are the height and width of the bounding box, respectively.</li>
 </ul>
 
 
