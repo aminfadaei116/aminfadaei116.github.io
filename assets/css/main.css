@@ -11238,7 +11238,7 @@ a.project-card .github-icon .stars:hover, a.project-card .github-icon .stars:foc
 
 
 
-
+/*
 .project-card2 { position: relative; width: 100%; min-height: 1px; padding-right: 15px; padding-left: 15px; flex: 0 0 100%; max-width: 100%; }
 @media (min-width: 768px) { .project-card2 { flex: 0 0 100%; max-width: 100%; } }
 
@@ -11252,7 +11252,7 @@ a.project-card .github-icon .stars:hover, a.project-card .github-icon .stars:foc
 @media (prefers-reduced-motion: reduce) { .project-card2 .github-icon .stars { transition: none; } }
 a.project-card2 .github-icon .stars:hover, a.project-card2 .github-icon .stars:focus { text-decoration: none; }
 .project-card2 .github-icon .stars:empty { display: none; }
-
+*/
 
 /* Publications */
 .bibliography { padding: 0em; }
