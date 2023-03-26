@@ -11219,10 +11219,10 @@ progress { position: fixed; left: 0; top: 56px; z-index: 10; width: 100%; height
 
 /* Projects */
 .project-card { position: relative; width: 100%; min-height: 1px; padding-right: 15px; padding-left: 15px; flex: 0 0 100%; max-width: 100%; }
-@media (min-width: 576px) { .project-card { flex: 0 0 50%; max-width: 50%; } }
+/*@media (min-width: 576px) { .project-card { flex: 0 0 50%; max-width: 50%; } }*/
 /*@media (min-width: 768px) { .project-card { flex: 0 0 33.3333333333%; max-width: 33.3333333333%; } }*/
 
-@media (min-width: 768px) { .project-card { flex: 0 0 100%; max-width: 100%; } }
+/*@media (min-width: 768px) { .project-card { flex: 0 0 100%; max-width: 100%; } }*/
 
 .project-card .card { transition: all 0.2s ease-in-out; margin-bottom: 1.5rem; padding: 0; }
 .project-card .card:hover { box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); transition: all 0.2s ease-in-out; }
