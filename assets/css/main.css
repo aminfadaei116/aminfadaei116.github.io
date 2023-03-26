@@ -14089,7 +14089,7 @@ footer { color: #343a40; background-color: #fdfdfd; }
 .news a:hover { text-decoration: underline; }
 
 .project-card .card-body { border-top: 1px solid rgba(60, 72, 88, 0.2); }
-.project-card2 .card-body { border-top: 1px solid rgba(60, 72, 88, 0.2); }
+/*.project-card2 .card-body { border-top: 1px solid rgba(60, 72, 88, 0.2); }*/
 
 /** Variables **********************************************
 $base-font-family:              Helvetica, sans-serif;
